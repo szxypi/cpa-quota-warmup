@@ -437,3 +437,7 @@ curl -s "http://127.0.0.1:8317/v0/resource/plugins/cpa-quota-warmup/config-yaml/
 ## v0.6.3
 
 - 修复：异步取到账号模型（或回退到 provider 推断）后，误把输入框现值当过滤词导致列表只剩当前模型。
+
+## 图标
+
+菜单图标按控制台内置图标的规格（24×24 圆角方块、`--primary-color` 底色、`strokeWidth 2` 白色线条）自行绘制，不含第三方素材。

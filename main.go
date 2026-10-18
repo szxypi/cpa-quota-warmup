@@ -11,7 +11,7 @@ import (
 
 const (
 	pluginName    = "cpa-quota-warmup"
-	pluginVersion = "0.6.3"
+	pluginVersion = "0.6.4"
 	logPrefix     = "[cpa-quota-warmup] "
 )
 
@@ -158,6 +158,7 @@ func registrationPayload() any {
 			Name:    pluginName,
 			Version: pluginVersion,
 			Author:  "szxypi",
+			Logo:    logoDataURI,
 			// Required by CPA. This points to the host SDK, not a published plugin repository.
 			GitHubRepository: "https://github.com/router-for-me/CLIProxyAPI",
 			// Descriptions are static strings fixed at plugin.register time, so

@@ -145,7 +145,7 @@ def main() -> None:
         capabilities = registration["capabilities"]
         if not capabilities.get("usage_plugin") or not capabilities.get("management_api"):
             raise AssertionError(f"unexpected capabilities: {capabilities}")
-        for field in ("Name", "Version", "Author", "GitHubRepository"):
+        for field in ("Name", "Version", "Author", "GitHubRepository", "Logo"):
             if not registration["metadata"].get(field):
                 raise AssertionError(f"required metadata field missing: {field}")
         plugin_id = registration["metadata"]["Name"]
